@@ -30,7 +30,7 @@ class Tree():
     Sometimes you can deploy those in the Cloud. Sometimes you can't (legacy app), forcing to rethink how you move persistence to the Cloud.
 
     """
-    # Activity: Find a more efficient way to do this check: DONE
+    # DONE: Activity: Find a more efficient way to do this check
     
     if not cls.tree_collection.contains(Tree.id == tree.id):
       cls.tree_collection.insert({"id" : tree.id,
