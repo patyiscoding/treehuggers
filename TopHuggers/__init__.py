@@ -1,7 +1,6 @@
 import logging
-import json
-
 import azure.functions as func
+import json
 
 def calc_top_huggers(collection):
     """
