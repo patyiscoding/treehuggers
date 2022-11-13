@@ -1,0 +1,49 @@
+{
+    "_default": {
+        "1": {
+            "id": "1",
+            "coordinates": [
+                "12",
+                "12"
+            ],
+            "address": "address",
+            "species": "species"
+        },
+        "2": {
+            "id": "2",
+            "coordinates": [
+                "12",
+                "12"
+            ],
+            "address": "address",
+            "species": "species"
+        },
+        "3": {
+            "id": "3",
+            "coordinates": [
+                "12",
+                "12"
+            ],
+            "address": "address",
+            "species": "species"
+        },
+        "4": {
+            "id": "4",
+            "coordinates": [
+                "12",
+                "12"
+            ],
+            "address": "address",
+            "species": "species"
+        },
+        "5": {
+            "id": "5",
+            "coordinates": [
+                "12",
+                "12"
+            ],
+            "address": "address",
+            "species": "species"
+        }
+    }
+}
