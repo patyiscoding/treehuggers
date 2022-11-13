@@ -1,7 +1,6 @@
 from tinydb import TinyDB, Query, where
 from tinydb.operations import delete
 import collections
-# import ValueError
 
 class Story():
   story_collection = TinyDB("story_collection.json")

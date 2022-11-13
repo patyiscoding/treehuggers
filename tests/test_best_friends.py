@@ -2,12 +2,15 @@ import unittest
 import json
 # Read this: https://requests.readthedocs.io/en/latest/user/quickstart/#make-a-request
 import requests 
-
+import os
 import azure.functions as func
 from BestFriends import main
 
+print("os: ", os.environ)
+
 class TestFunction(unittest.TestCase):
     def test_best_friends(self):
+        local_URI = os.environ["local_URI"]
         # Instead of a mock HTTP request.
         # We make a real HTTP request, passing our mock stories as parameters
         payload = {'stories': 
@@ -17,7 +20,7 @@ class TestFunction(unittest.TestCase):
                 ], 'tree_id': 100}
 
 
-        resp = requests.get('http://localhost:7071/api/bestfriends', json = payload)
+        resp = requests.get(local_URI + 'bestfriends', json = payload)
 
         # This converts the body of the response (bytes) back into a JSON dictionary 
         best_friend = resp.json() 

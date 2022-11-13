@@ -2,9 +2,11 @@ import unittest
 import json
 # Read this: https://requests.readthedocs.io/en/latest/user/quickstart/#make-a-request
 import requests 
-
+import os
 import azure.functions as func
 from TopHuggers import main
+
+local_URI = os.environ['local_URI']
 
 class TestFunction(unittest.TestCase):
     def test_top_huggers(self):
@@ -19,7 +21,7 @@ class TestFunction(unittest.TestCase):
 
         resp = requests.get(
                 #This is the URL of the function deployed in the local development server
-                'http://localhost:7071/api/tophuggers', 
+                local_URI + 'tophuggers',
                 #send payload as JSON
                 json = payload)
 
